@@ -6,6 +6,11 @@ import { CounterButton } from "./CounterButton";
 export default {
   title: "Example/CounterButton",
   component: CounterButton,
+  argTypes: {
+    title: { control: "text" },
+    counter: { control: "number" },
+    textColor: { control: "color" },
+  },
 } as ComponentMeta<typeof CounterButton>;
 
 const Template: ComponentStory<typeof CounterButton> = (args) => (
